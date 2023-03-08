@@ -1,0 +1,163 @@
+.top {
+  margin-top: 0.4rem;
+  width: 100%;
+  height: 2.5rem;
+  border-bottom: 1px solid #999;
+  position: relative;
+}
+.top .tx a {
+  display: block;
+  margin-top: 0.24rem;
+  margin-left: 0.24rem;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid #999;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.top .tx a img {
+  width: 100%;
+  height: 100%;
+}
+.top span {
+  display: block;
+  position: absolute;
+  top: 0.6rem;
+  left: 2.6rem;
+  width: 2.4rem;
+  height: 0.8rem;
+  font-size: 0.56rem;
+  text-align: center;
+}
+.bq {
+  width: 14.6rem;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  margin: 0.2rem auto 0;
+  display: flex;
+}
+.bq a {
+  flex: 1;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  margin-right: 0.16rem;
+  background-color: #61649f;
+  color: #fff;
+  font-size: 0.6rem;
+}
+.bq2 {
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  width: 14.6rem;
+  line-height: 1.2rem;
+  margin: 0.2rem auto 0;
+  display: flex;
+}
+.bq2 a {
+  flex: 1;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  margin-right: 0.16rem;
+  background-color: #61649f;
+  color: #fff;
+  font-size: 0.6rem;
+}
+.cz {
+  margin-top: 0.4rem;
+  color: #333;
+  font-weight: 400;
+  font-size: 0.68rem;
+}
+.cz2 {
+  width: 100%;
+  border-bottom: 1px solid #999;
+  line-height: 1.2rem;
+  margin: 0.2rem auto 0;
+  padding-bottom: 0.2rem;
+  display: flex;
+}
+.cz2 a {
+  flex: 1;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  margin-right: 0.16rem;
+  background-color: #61649f;
+  color: #fff;
+  font-size: 0.6rem;
+}
+.gm {
+  margin-top: 0.4rem;
+  color: #333;
+  font-weight: 400;
+  font-size: 0.68rem;
+}
+.gm2 {
+  width: 100%;
+  border-bottom: 1px solid #999;
+  line-height: 1.2rem;
+  margin: 0.2rem auto 0;
+  padding-bottom: 0.2rem;
+  display: flex;
+}
+.gm2 a {
+  flex: 1;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  margin-right: 0.16rem;
+  background-color: #61649f;
+  color: #fff;
+  font-size: 0.6rem;
+}
+.tj {
+  margin-top: 0.4rem;
+  color: #333;
+  font-weight: 400;
+  font-size: 0.68rem;
+}
+.new {
+  width: 100%;
+  border-bottom: 1px solid #999;
+  line-height: 1.2rem;
+  margin: 0.2rem auto 0;
+  padding-bottom: 0.2rem;
+  display: flex;
+}
+.new a {
+  flex: 1;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  margin-right: 0.16rem;
+  background-color: #61649f;
+  color: #fff;
+  font-size: 0.6rem;
+}
+.jp {
+  margin-top: 0.4rem;
+  color: #333;
+  font-weight: 400;
+  font-size: 0.68rem;
+}
+.jp2 {
+  width: 100%;
+  height: 10rem;
+  margin: 0.2rem auto 5.2rem;
+}
+.jp2 a {
+  float: left;
+  display: block;
+  width: 4.8rem;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  margin: 0.08rem;
+  background-color: #61649f;
+  color: #fff;
+  font-size: 0.6rem;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>国家非物质文化遗产</title>
+    <link rel="stylesheet" href="../static/css/normalize.css">
+    <link rel="stylesheet" href="../static/font/iconfont.css">
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/zx.css">
+    <style>
+        .sejta-input-container{
+            --inputWidth: 285px;
+            --inputHeight: 30px;
+            width: var(--inputWidth);
+            height: var(--inputHeight);
+            position: relative;}
+        input{
+            height: 100%;
+            width: var(--inputWidth);
+            border: 0;
+            outline: 0;
+            display: flex;
+            border-bottom: cornflowerblue 2px solid;
+        }
+
+        button{
+            border-bottom: cornflowerblue 2px solid;
+            border: cornflowerblue 2px solid;
+            border-radius: 30px;
+            width: 200px;
+
+
+        }
+    </style>
+</head>
+<body>
+<div class="box" id="app2">
+    <h3>注册页面</h3>
+
+
+    <a href="#">
+        <input type="text" v-model="name" style="margin-left: 18px;margin-top:10px;BACKGROUND-COLOR: transparent;" placeholder="昵称"><br>
+        <input type="text" v-model="password" style="margin-left: 18px;margin-top:-60px;BACKGROUND-COLOR: transparent;" placeholder="密码"><br>
+        <input type="text" v-model="email" style="margin-left: 18px;margin-top:-60px;BACKGROUND-COLOR: transparent;" placeholder="email" >
+
+    </a>
+    <a href="#">
+
+        <button  @click="login" style="margin-left:18px ">注册</button>
+    </a>
+
+
+</div>
+
+<!-- 底部导航 -->
+<!-- 底部导航 -->
+<div class="bottom-nav">
+    <a href="/index">
+        <span>&#xe61e;</span>
+        首页
+    </a>
+    <a href="/dt">
+        <span>&#xe7c2;</span>
+        动态
+    </a>
+    <a href="#">
+        <span>&#xe66f;</span>
+        发布
+    </a>
+    <a href="/sc">
+        <span>&#xe61a;</span>
+        商城
+    </a>
+    <a href="/zx">
+        <span>&#xe62a;</span>
+        中心
+    </a>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+    new Vue({
+        el: "#app2",
+        data: {
+            name:"",
+            password:"",
+            email: "",
+        },
+        methods:{
+            login:function (){
+                axios.post('/user/signUp', {
+                    name: this.name,
+                    password: this.password,
+                    email: this.email
+                })
+                    .then(function (res) {
+                        if(res.data.code=='200'){
+                            window.location.href="/login"
+                        }else {
+                            alert("用户名重复,注册失败")
+                        }
+
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    })
+            }
+        }
+    })
+</script>
+</body>
+</html>

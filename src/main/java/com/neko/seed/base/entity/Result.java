@@ -15,14 +15,14 @@ public class Result {
     private String message;
     private Object data;
 
-    private Result setResult(int code, String message, Object data) {
+    private  Result setResult(int code, String message, Object data) {
         this.code = code;
         this.message = message;
         this.data = data;
         return this;
     }
 
-    public Result success() {
+    public  Result success() {
         return setResult(200, "Success", null);
     }
 
@@ -40,5 +40,8 @@ public class Result {
 
     public Result fail(String message, int code) {
         return setResult(code, message, null);
+    }
+    public Result fail(String message) {
+        return setResult(400, message,null );
     }
 }

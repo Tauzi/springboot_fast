@@ -1,6 +1,7 @@
 # 基础配置文件
-
 spring:
+  thymeleaf:
+    cache: false
   profiles:
     active: dev     # 配置文件环境
   http:
@@ -9,12 +10,22 @@ spring:
       charset: utf-8
       enabled: true
   mvc:
+    static-path-pattern: /static/**
     throw-exception-if-no-handler-found: true     # 接口404时抛出异常
-  resources:
-    add-mappings: false
+  mybatis-plus:
+    configuration:
+      log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    global-config:
+      db-config:
+        id-type: auto
+
 
 server:
-  servlet:
-    context-path: /v1     # 应用路径，可以通过设置路径来控制版本
   tomcat:
     uri-encoding: UTF-8
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+       id-type: auto

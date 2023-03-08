@@ -1,13 +1,20 @@
 package com.neko.seed.user.controller;
 
+import cn.dev33.satoken.stp.StpUtil;
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.neko.seed.auth.annotation.Auth;
 import com.neko.seed.base.entity.Result;
 import com.neko.seed.user.data.SignInData;
 import com.neko.seed.user.data.SignUpData;
+import com.neko.seed.user.entity.User;
 import com.neko.seed.user.service.UserService;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+
+import java.io.Serializable;
+import java.util.Objects;
 
 @RestController
 @RequestMapping("/user")
@@ -20,8 +27,16 @@ public class UserController {
      */
     @PostMapping("/signIn")
     public Result signIn(@RequestBody @Validated SignInData data) {
-        // 使用SpringValidation校验数据
-        return new Result().success(userService.signIn(data));
+        User one = userService.getOne(new LambdaQueryWrapper<User>().eq(User::getName, data.getName()));
+        if(Objects.nonNull(one)){
+            if(one.getName().equals(data.getName())&&one.getPassword().equals(data.getPassword())){
+                StpUtil.login(one.getId());
+                return new Result().success("登录成功");
+            }
+            return new Result().fail("登录失败",400);
+        }
+
+        return new Result().fail("登录失败",400);
     }
 
     /**
@@ -30,25 +45,27 @@ public class UserController {
     @PostMapping("/signUp")
     public Result signUp(@RequestBody @Validated SignUpData data) {
         // 使用SpringValidation校验数据
-        userService.signUp(data);
-        return new Result().success();
+        User one = userService.getOne(new LambdaQueryWrapper<User>().eq(User::getName, data.getName()));
+        if (Objects.isNull(one)) {
+            User user=new User();
+            BeanUtils.copyProperties(data,user);
+            userService.save(user);
+            return new Result().success();
+        }
+
+        return new Result().fail("注册失败");
     }
 
-    /**
-     * 查看当前用户的Id
-     */
-    @GetMapping
-    public Result get(@Auth(required = false) Long userId) {
-        // 该接口可以不登陆，未登陆时返回的结果为空，登陆时会返回当前登陆用户的Id
-        return new Result().success(userId);
-    }
 
     /**
      * 根据Id查看单个用户的信息
      */
-    @GetMapping("/{userId}")
-    public Result get(@PathVariable("userId") long userId) {
-        return new Result().success(userService.getById(userId));
+    @GetMapping("/get")
+    public Result get() {
+        System.out.println("--------------------"+StpUtil.getLoginId());
+
+        return new Result().success(userService.getById((Serializable) StpUtil.getLoginId())
+        );
     }
 
     /**

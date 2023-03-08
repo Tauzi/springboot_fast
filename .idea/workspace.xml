@@ -5,13 +5,92 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d206d270-e142-4689-884c-095d6758ad19" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/user/controller/RouteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/com.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/com.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/common.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/common.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/dt.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/dt.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/gr.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/gr.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/hd.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/hd.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/ly.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/ly.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/normalize.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/sc.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/sc.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/xc.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/xc.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/zx.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/zx.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/font/demo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/font/demo_index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/font/iconfont.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/font/iconfont.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/font/iconfont.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/font/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/font/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/font/iconfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/b1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/b2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/b3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/b5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/banner1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/banner2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/banner3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/banner4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/banner6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/classify.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/ly1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/ly2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/nav1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/nav2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/nav3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/nav4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/new1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/new2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/new3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/new4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/new5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/new7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/new8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/tx.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/flexible.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/video/vd1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/video/vd10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/video/vd11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/video/vd12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/video/vd2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/video/vd3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/video/vd4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/video/vd5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/video/vd6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/video/vd7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/video/vd8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/video/vd9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/html/dt.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/html/gr.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/html/hd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/html/ly.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/html/sc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/html/xc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/html/zx.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/reg.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/neko/seed/ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/neko/seed/ApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neko/seed/base/entity/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/base/entity/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neko/seed/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/user/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neko/seed/user/data/SignUpData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/user/data/SignUpData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neko/seed/user/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/user/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neko/seed/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/user/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neko/seed/user/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neko/seed/user/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +106,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -128,24 +212,33 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/idea_project/springboot/src/main/resources/templates/html",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\idea_project\springboot\src\main\resources\templates\html" />
+      <recent name="D:\idea_project\springboot\src\main\resources\templates" />
+      <recent name="D:\idea_project\springboot\src\main\resources\static" />
+      <recent name="E:\Workspace\Java\springboot-restful-starter\src\main\java\com\neko\seed" />
+      <recent name="E:\Workspace\Java\springboot-restful-starter\src\main\java\com\neko\seed\base\handler" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\idea_project\springboot\src\main\resources\templates" />
+      <recent name="D:\idea_project\springboot\src\main\resources\static" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.neko.seed.user.exception" />
       <recent name="com.neko.seed.example.data" />
       <recent name="com.neko.seed.base.exception" />
       <recent name="com.neko.seed.base.config" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Workspace\Java\springboot-restful-starter\src\main\java\com\neko\seed" />
-      <recent name="E:\Workspace\Java\springboot-restful-starter\src\main\java\com\neko\seed\base\handler" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.Application">
@@ -213,7 +306,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1545964609439</updated>
-      <workItem from="1678246132584" duration="1879000" />
+      <workItem from="1678246132584" duration="18437000" />
     </task>
     <servers />
   </component>
@@ -244,6 +337,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/neko/seed/auth/data/AuthData.java" />

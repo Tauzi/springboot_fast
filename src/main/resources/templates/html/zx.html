@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>国家非物质文化遗产</title>
+	<link rel="stylesheet" href="../../static/css/normalize.css">
+	<link rel="stylesheet" href="../../static/font/iconfont.css">
+	<link rel="stylesheet" href="../../static/css/common.css">
+	<link rel="stylesheet" href="../../static/css/zx.css">
+</head>
+<body>
+	<div class="box" id="app3">
+        <a href="#">
+            <span style="margin-left: 18px;" >头像</span>
+            <div class="tx"><img src="https://avatars.githubusercontent.com/u/80378195?v=4" alt=""></div>
+        </a>
+        <a href="#">
+            <span style="margin-left: 18px;" >昵称</span>
+            <div class="tx" >{{name}}</div>
+		</a>
+        <a href="#" target="_blank">
+			<span style="margin-left: 18px;" >邮箱</span>
+			<div class="tx">{{email}}</div>
+
+			</a>
+		<input v-model="email">
+
+    </div>
+
+    <!-- 底部导航 -->
+	<!-- 底部导航 -->
+	<div class="bottom-nav">
+		<a href="/index">
+			<span>&#xe61e;</span>
+			首页
+		</a>
+		<a href="/dt">
+			<span>&#xe7c2;</span>
+			动态
+		</a>
+		<a href="/login">
+			<span>&#xe66f;</span>
+			发布
+		</a>
+		<a href="/sc">
+			<span>&#xe61a;</span>
+			商城
+		</a>
+		<a href="/zx">
+			<span>&#xe62a;</span>
+			中心
+		</a>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script>
+		new Vue({
+			el: "#app3",
+			data: {
+				name:"123",
+				password:"111",
+				email: "11111"
+			},
+			onload:function () {
+
+			},
+			methods:{
+				get1:function (){
+					this.email=123213;
+				},
+				get:function (){
+					axios.get('/user/get', {
+						name: this.name,
+						password: this.password
+					})
+							.then( res=> {
+									this.name=res.data.data.name
+									this.email=res.data.data.email
+
+							})
+							.catch(function (error) {
+								console.log(error);
+							})
+				}
+			},
+			mounted:function (){
+				this.get();
+			},
+			onload:function (){
+				this.get();
+			}
+		})
+	</script>
+</body>
+</html>
