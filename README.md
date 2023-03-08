@@ -1,4 +1,4 @@
-# springboot-restful-starter
+# springboot_fast
 
 SpringBoot RESTful API 脚手架
 
@@ -6,7 +6,7 @@ SpringBoot RESTful API 脚手架
 
 这是一个基于`SpringBoot 2.1.1 RELEASE`，用于搭建`RESTful API`工程的脚手架，只需`三分钟`你就可以开始编写业务代码，不再烦恼于构建项目与风格统一。
 
-自用
+基于springboot-restful-starter项目修改自用
 
 ## [文档](./docs/index.md)
 
