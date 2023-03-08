@@ -1,0 +1,32 @@
+@baseFont: 50;
+.vedio {
+    width: 100%;
+    margin-bottom: (110rem / @baseFont); 
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 0;
+    a {
+        display: block;     
+        margin: (10rem / @baseFont);
+        height: (1200rem / @baseFont);
+        width: (230rem / @baseFont);
+        height: (180rem / @baseFont);
+        text-align: center;
+        line-height: (180rem / @baseFont);
+        font-size: (36rem / @baseFont);
+        color: #fff;
+        position: relative;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        clear: both;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        p {
+            position: absolute;
+            top: (10rem / @baseFont);
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}

@@ -1,0 +1,35 @@
+@baseFont: 50;
+.new {
+    margin: 0 auto;
+    width: (730rem / @baseFont);
+    height: (640rem / @baseFont);
+    
+    display: flex;
+    flex-direction: column;
+     img {
+        flex: 1;
+        width: 100%;
+        margin-top: (10rem / @baseFont);
+        height: (320rem / @baseFont);
+        border-radius: (20rem / @baseFont);
+        overflow: hidden;
+     }
+}
+.m-nav {
+    width: (730rem / @baseFont);    
+    margin: (10rem / @baseFont) auto (100rem / @baseFont);
+    display: flex;
+    a {
+        flex: 1;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        margin-right: (4rem / @baseFont);
+        width: (182rem / @baseFont);
+        height: (140rem / @baseFont);
+        background-color: #61649f;
+        line-height: (140rem / @baseFont);
+        color: #fff;
+        font-size: (40rem / @baseFont);
+    }
+}

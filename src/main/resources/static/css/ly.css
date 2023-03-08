@@ -1,0 +1,33 @@
+.new {
+  margin: 0 auto;
+  width: 14.6rem;
+  height: 12.8rem;
+  display: flex;
+  flex-direction: column;
+}
+.new img {
+  flex: 1;
+  width: 100%;
+  margin-top: 0.2rem;
+  height: 6.4rem;
+  border-radius: 0.4rem;
+  overflow: hidden;
+}
+.m-nav {
+  width: 14.6rem;
+  margin: 0.2rem auto 2rem;
+  display: flex;
+}
+.m-nav a {
+  flex: 1;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  margin-right: 0.08rem;
+  width: 3.64rem;
+  height: 2.8rem;
+  background-color: #61649f;
+  line-height: 2.8rem;
+  color: #fff;
+  font-size: 0.8rem;
+}

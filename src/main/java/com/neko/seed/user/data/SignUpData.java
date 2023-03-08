@@ -9,10 +9,10 @@ import javax.validation.constraints.NotBlank;
 @Data
 @Accessors(chain = true)
 public class SignUpData {
-    @NotBlank
+
     private String name;
-    @NotBlank
+
     private String password;
-    @Email
+
     private String email;
 }

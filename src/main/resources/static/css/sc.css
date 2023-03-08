@@ -1,0 +1,82 @@
+.top {
+  width: 100%;
+  margin: 1.9rem auto 0;
+  display: flex;
+}
+.top a {
+  flex: 1;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  margin: 0.04rem;
+  background-color: #61649f;
+  color: #fff;
+  font-size: 0.56rem;
+}
+.sp {
+  width: 100%;
+  display: flex;
+}
+.sp a {
+  flex: 1;
+  margin: 0.2rem;
+  display: block;
+  width: 50%;
+  height: 3rem;
+  border: 1px solid #000;
+  border-radius: 0.4rem;
+  text-align: center;
+  line-height: 3rem;
+  color: #000;
+  font-size: 0.68rem;
+}
+.md {
+  width: 100%;
+  display: flex;
+}
+.md a {
+  flex: 1;
+  margin: 0.2rem;
+  display: block;
+  width: 50%;
+  height: 3rem;
+  border: 1px solid #000;
+  border-radius: 0.4rem;
+  text-align: center;
+  line-height: 3rem;
+  color: #000;
+  font-size: 0.68rem;
+}
+.bt {
+  width: 100%;
+  display: flex;
+}
+.bt span {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 10rem;
+  border: 1px solid #000;
+  border-radius: 0.4rem;
+  margin: 0.2rem;
+  text-align: center;
+  line-height: 10rem;
+  font-size: 0.68rem;
+}
+.bt span a {
+  flex: 1;
+  margin: 0.2rem;
+  display: block;
+  width: 95%;
+  height: 2rem;
+  border: 1px solid #000;
+  border-radius: 0.4rem;
+  color: #000;
+  text-align: center;
+  line-height: 4.6rem;
+  font-size: 0.68rem;
+}
+.bt .no {
+  border: 0;
+}
