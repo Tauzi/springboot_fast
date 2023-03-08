@@ -21,8 +21,8 @@
 			  width: var(--inputWidth);
 			  border: 0;
 			  outline: 0;
-			  display: flex;
-			  border-bottom: cornflowerblue 2px solid;
+
+
 		  }
 
 		button{
@@ -39,16 +39,21 @@
 	<div class="box" id="app">
 		<h3>请先登录再完成下面操作!</h3>
         <a href="#">
-            <span style="margin-left: 18px;">头像</span>
+            <span style="">头像</span>
             <div class="tx"><img src="https://avatars.githubusercontent.com/u/80378195?v=4" alt=""></div>
         </a>
 
 		<a href="#">
 			<input type="text" v-model="name" style="margin-left: 0px;margin-top:10px;BACKGROUND-COLOR: transparent;" placeholder="账号"><br>
+
+		</a>
+		<a href="#">
+
 			<input type="text" v-model="password" style="margin-left: 0px;margin-top:-60px;BACKGROUND-COLOR: transparent;" placeholder="密码">
 		</a>
 
-			<a href="#"  @click="login">登录</a>
+
+			<a href="#"  @click="login" >登录</a>
 			<a href="/reg">注册</a>
 
 
