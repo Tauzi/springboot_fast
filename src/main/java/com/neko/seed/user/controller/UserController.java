@@ -4,6 +4,8 @@ import cn.dev33.satoken.stp.StpUtil;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.neko.seed.auth.annotation.Auth;
 import com.neko.seed.base.entity.Result;
+import com.neko.seed.base.util.DesUtil;
+
 import com.neko.seed.user.data.SignInData;
 import com.neko.seed.user.data.SignUpData;
 import com.neko.seed.user.entity.User;
@@ -26,10 +28,10 @@ public class UserController {
      * 登陆接口
      */
     @PostMapping("/signIn")
-    public Result signIn(@RequestBody @Validated SignInData data) {
+    public Result signIn(@RequestBody @Validated SignInData data) throws Exception {
         User one = userService.getOne(new LambdaQueryWrapper<User>().eq(User::getName, data.getName()));
         if(Objects.nonNull(one)){
-            if(one.getName().equals(data.getName())&&one.getPassword().equals(data.getPassword())){
+            if(one.getName().equals(data.getName())&&one.getPassword().equals(DesUtil.getEncryptString(data.getPassword()))){
                 StpUtil.login(one.getId());
                 return new Result().success("登录成功");
             }
@@ -43,12 +45,14 @@ public class UserController {
      * 注册接口
      */
     @PostMapping("/signUp")
-    public Result signUp(@RequestBody @Validated SignUpData data) {
+    public Result signUp(@RequestBody @Validated SignUpData data) throws Exception {
         // 使用SpringValidation校验数据
         User one = userService.getOne(new LambdaQueryWrapper<User>().eq(User::getName, data.getName()));
         if (Objects.isNull(one)) {
             User user=new User();
             BeanUtils.copyProperties(data,user);
+            //加密插入
+            user.setPassword(DesUtil.getEncryptString(data.getPassword()));
             userService.save(user);
             return new Result().success();
         }
