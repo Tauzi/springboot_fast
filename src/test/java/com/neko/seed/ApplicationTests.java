@@ -12,7 +12,7 @@ public class ApplicationTests {
 
 	@Test
 	public void contextLoads() throws Exception {
-		ConfigTools.main(new String[]{"Lonner2333"});
+		
 	}
 
 }
